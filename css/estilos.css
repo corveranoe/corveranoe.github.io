@@ -337,7 +337,7 @@ body{
 }
 /*footer*/
 .footer{
-    background-color: #293f; 
+    background-color: rgb(13, 14, 13); 
 }
 .footer__title{
     font-weight: 300;

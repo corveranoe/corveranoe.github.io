@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
   linkCta.addEventListener("click", function(event) {
     event.preventDefault();
     
-    const aboutSection = document.getElementById("aboutSection");
+    const scrollToId = linkCta.getAttribute("data-scroll-to");
+    const targetSection = document.getElementById(scrollToId);
     
-    if (aboutSection) {
-      window.scrollTo({
-        top: aboutSection.offsetTop,
+    if (targetSection) {
+      targetSection.scrollIntoView({
         behavior: "smooth"
       });
     }

@@ -1,15 +1,15 @@
-// script.js
+// botonAprender.js
 document.addEventListener("DOMContentLoaded", function() {
-  const ctaLink = document.getElementById("ctaLink");
+  const linkCta = document.getElementById("linkCta");
   
-  ctaLink.addEventListener("click", function(event) {
+  linkCta.addEventListener("click", function(event) {
     event.preventDefault();
     
-    const nextSection = ctaLink.nextElementSibling;
+    const aboutSection = document.getElementById("aboutSection");
     
-    if (nextSection) {
+    if (aboutSection) {
       window.scrollTo({
-        top: nextSection.offsetTop,
+        top: aboutSection.offsetTop,
         behavior: "smooth"
       });
     }

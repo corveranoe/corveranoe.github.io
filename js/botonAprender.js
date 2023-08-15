@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
   ctaLink.addEventListener("click", function(event) {
     event.preventDefault();
     
-    const targetElement = document.querySelector(ctaLink.getAttribute("href"));
+    const nextSection = ctaLink.nextElementSibling;
     
-    if (targetElement) {
+    if (nextSection) {
       window.scrollTo({
-        top: targetElement.offsetTop,
+        top: nextSection.offsetTop,
         behavior: "smooth"
       });
     }
